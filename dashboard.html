@@ -1,0 +1,17 @@
+<h2>Dashboard</h2>
+
+<p id="user"></p>
+<p>Balance: <span id="balance"></span></p>
+
+<a href="game.html">Play Mines</a>
+
+<script>
+
+let user = localStorage.getItem("user");
+
+document.getElementById("user").innerText="User: "+user;
+
+document.getElementById("balance").innerText=
+localStorage.getItem(user+"_balance");
+
+</script>
